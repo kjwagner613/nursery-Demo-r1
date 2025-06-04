@@ -17,7 +17,7 @@ const CategoryFilter = ({ setSelectedCategory }) => {
     <>
 
       <select onChange={(e) => { setCategory(e.target.value); setSelectedCategory(e.target.value); }}>
-        <option value="">Select Category</option>
+        <option id="category-select" value="">Select Category</option>
         {Object.keys(categoryData).map(cat => (
           <option key={cat} value={cat}>{cat}</option>
         ))}
@@ -25,7 +25,7 @@ const CategoryFilter = ({ setSelectedCategory }) => {
 
       {selectedCategory && (
         <select onChange={(e) => setSubcategory(e.target.value)}>
-          <option value="">Select Subcategory</option>
+          <option id="subcategory-select" value="">Select Subcategory</option>
           {categoryData[selectedCategory].map(subcat => (
             <option key={subcat} value={subcat}>{subcat}</option>
           ))}
@@ -108,7 +108,7 @@ const Products = () => {
 
   return (
     <div>
-      <h1 style={{ fontFamily: 'var(--font-main)', fontSize: 'var(--font-size-titles)' }} className="my-8">
+      <h1 style={{ fontFamily: 'var(--font-main)', fontSize: 'var(--font-size-titles)' }} className="pt-20">
         Product Gallery
       </h1>
 

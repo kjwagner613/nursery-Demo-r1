@@ -18,7 +18,7 @@ const NavBar = () => {
       {user ? (
         <>
           <div className="welcome"></div>
-          <ul className="nav-links">
+          <ul className="nav-links fixed top-0 inset-x-0 z-50 text-gray-200 bg-[#2a3950] py-8 mb-4 h-14 flex items-center">
             <li><Link to="/pages/dashboard">Dashboard</Link></li>
             <li><Link to="/pages/about">About Us</Link></li>
             <li><Link to="/pages/services">Services</Link></li>

@@ -6,7 +6,7 @@ import landscape2 from "../assets/images/landscape2.jpg";
 const Services = () => {
   return (
     <>     
-      <h1 style={{ fontFamily: 'var(--font-main)', fontSize: 'var(--font-size-titles)' }} className="my-8">
+      <h1 style={{ fontFamily: 'var(--font-main)', fontSize: 'var(--font-size-titles)' }} className="pt-20">
         Services
       </h1>
       <div className="grid grid-cols-3 gap-4">
